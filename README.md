@@ -19,13 +19,26 @@ A simple web application built using Flask that helps users plan weddings by man
 - CSS
 
 ---
-V```   ← start (3 backticks)
+
 ## 📂 Project Structure
+```
+wedding-platform/
+├── app.py
+├── README.md
+├── requirements.txt
+├── static/
+│ └── style.css
+└── templates/
+├── base.html
+├── index.html
+├── vendors.html
+└── checklist.html
+```
 
 
-```   ← end (3 backticks)
+---
 
-
+## ▶️ How to Run Locally
 1. Install Flask  
 
 
