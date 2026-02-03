@@ -18,6 +18,7 @@ It helps users manage wedding vendors and checklist tasks.
 ---
 
 ## 📂 Project Structure
+```
 wedding-platform/
 ├── app.py
 ├── README.md
@@ -29,7 +30,7 @@ wedding-platform/
 ├── index.html
 ├── vendors.html
 └── checklist.html
-
+```
 
 ---
 
