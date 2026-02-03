@@ -33,12 +33,25 @@ wedding-platform/
 ├── vendors.html
 └── checklist.html
 
+
 ---
 
 ## ▶️ How to Run Locally
 1. Install Flask  
+
+
+pip install flask
+
 2. Run the application  
+
+
+python app.py
+
 3. Open browser and visit  
+
+
+http://127.0.0.1:5000/
+
 
 ---
 
