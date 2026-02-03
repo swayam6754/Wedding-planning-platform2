@@ -1,66 +1,31 @@
-# Wedding Planning Platform 💍
+# Wedding Planning Platform
 
-A simple web application built using Flask that helps users plan weddings by managing vendors and tracking important tasks.
+A wedding planning web application built using Flask.
+It helps users manage wedding vendors and checklist tasks.
 
----
+## Features
+- Home page with navigation
+- Vendor management page
+- Wedding checklist page
+- SQLite database
+- Reusable base template
 
-## ✨ Features
-- Multi-page website (Home, Vendors, Checklist)
-- Vendor listing
-- Wedding preparation checklist
-- Reusable templates using base layout
-- Clean and simple user interface
-
----
-
-## 🛠 Tech Stack
+## Technologies Used
 - Python (Flask)
 - HTML
 - CSS
+- SQLite
 
----
+## Project Structure
+- app.py
+- templates/
+- static/
+- database.db
 
-## 📂 Project Structure
-```
-wedding-platform/
-├── app.py
-├── README.md
-├── requirements.txt
-├── static/
-│ └── style.css
-└── templates/
-├── base.html
-├── index.html
-├── vendors.html
-└── checklist.html
-```
+## How to Run
+1. Install Flask
+2. Run python app.py
+3. Open browser and go to http://127.0.0.1:5000
 
-
----
-
-## ▶️ How to Run Locally
-1. Install Flask  
-
-
-pip install flask
-
-2. Run the application  
-
-
-python app.py
-
-3. Open browser and visit  
-
-
-http://127.0.0.1:5000/
-
-
----
-
-## 🎯 Project Purpose
-This project was created to practice Flask routing, template inheritance, and basic frontend styling.
-
----
-
-## 👤 Author
+## Author
 Swayam Vishwakarma

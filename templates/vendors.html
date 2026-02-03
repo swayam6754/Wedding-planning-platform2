@@ -1,17 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Wedding Vendors</h1>
+<h2>Wedding Vendors</h2>
+
+<form method="POST" action="/add_vendor">
+    <input type="text" name="name" placeholder="Vendor Name" required>
+    <input type="text" name="category" placeholder="Category" required>
+    <button type="submit">Add Vendor</button>
+</form>
 
 <ul>
-    <li>Venue & Hall Management</li>
-    <li>Catering Services</li>
-    <li>Photography & Videography</li>
-    <li>Decoration & Lighting</li>
+{% for v in vendors %}
+    <li>
+        {{ v[0] }} - {{ v[1] }}
+        <a href="/delete_vendor/{{ v[0] }}">❌</a>
+    </li>
+{% endfor %}
 </ul>
-
-<p>
-These vendors are essential for successful wedding planning.
-</p>
 {% endblock %}
-

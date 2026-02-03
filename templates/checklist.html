@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Wedding Checklist</h1>
+<h2>Wedding Checklist</h2>
+
+<form method="POST" action="/add_task">
+    <input type="text" name="task" placeholder="New wedding task" required>
+    <button type="submit">Add Task</button>
+</form>
 
 <ul>
-    <li>Finalize wedding date</li>
-    <li>Book venue</li>
-    <li>Confirm vendors</li>
-    <li>Send invitations</li>
-    <li>Arrange wedding outfits</li>
+{% for t in tasks %}
+    <li>
+        {{ t[0] }}
+        <a href="/delete_task/{{ t[0] }}">❌</a>
+    </li>
+{% endfor %}
 </ul>
-
-<p>
-This checklist helps users track wedding preparation tasks.
-</p>
 {% endblock %}
 
