@@ -14,13 +14,24 @@ It helps users manage wedding vendors and checklist tasks.
 - Python (Flask)
 - HTML
 - CSS
-- SQLite
 
-## Project Structure
-- app.py
-- templates/
-- static/
-- database.db
+---
+
+## 📂 Project Structure
+wedding-platform/
+├── app.py
+├── README.md
+├── requirements.txt
+├── static/
+│ └── style.css
+└── templates/
+├── base.html
+├── index.html
+├── vendors.html
+└── checklist.html
+
+
+---
 
 ## How to Run
 1. Install Flask
